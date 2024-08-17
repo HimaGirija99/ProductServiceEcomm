@@ -1,7 +1,5 @@
-package org.example.productservice.clients.fakestore.Dto;
+package org.example.productservice.dtos;
 
-import org.example.productservice.dtos.RatingDto;
-import org.example.productservice.clients.fakestore.DummyStore.IClientProductDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class FakeStoreProductDto implements IClientProductDto {
+public class ProductDto {
     private Long id;
     private String title;
     private double price;

@@ -1,6 +1,6 @@
 package org.example.productservice.clients.fakestore.client;
 
-import com.example.eCommerceSite.clients.fakestore.Dto.FakeStoreProductDto;
+import org.example.productservice.clients.fakestore.Dto.FakeStoreProductDto;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
