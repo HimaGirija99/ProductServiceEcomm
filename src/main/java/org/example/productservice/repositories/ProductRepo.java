@@ -21,4 +21,6 @@ public interface ProductRepo extends JpaRepository<Product, Long> {
     List<Product> findByIdIsNotNullOrderByPrice();
 
     List<Product> findAllByIsPublicFalse();
+
+    String findTitleById(long l);
 }

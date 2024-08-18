@@ -19,4 +19,6 @@ public class Categories extends BaseModel{
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY, targetEntity = Product.class)
     @Fetch(FetchMode.SELECT)
     private List<Product> productList;
+
+
 }

@@ -19,4 +19,6 @@ import org.springframework.stereotype.Repository;
 
         @Query(value = "SELECT c.name FROM Categories c WHERE c.id = ?1")
         String findCategoryNameByIdV1(long id);
+
+    Object findByName(String electronics);
 }
