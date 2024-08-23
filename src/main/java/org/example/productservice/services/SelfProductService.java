@@ -1,6 +1,7 @@
 package org.example.productservice.services;
 
 import org.example.productservice.models.Product;
+import org.example.productservice.repositories.ProductElasticSearchRepo;
 import org.example.productservice.repositories.ProductRepo;
 
 import java.util.List;
@@ -8,9 +9,10 @@ import java.util.List;
 public class SelfProductService implements IProductService{
 
         ProductRepo productRepo;
-
-        public SelfProductService(ProductRepo productRepo) {
+    ProductElasticSearchRepo productElasticSearchRepo;
+        public SelfProductService(ProductRepo productRepo, ProductElasticSearchRepo productElasticSearchRepo) {
             this.productRepo = productRepo;
+            this.productElasticSearchRepo = productElasticSearchRepo;
         }
         @Override
         public List<Product> getAllProducts() {
